@@ -1,0 +1,168 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Lushe Shipkov Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <!--Airfoil Simulator head-->
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <style>
+        body {margin: 0;}
+        #gameContainer {width: 100%; height: 100%;}
+        canvas {width: 100%; height: 100%;}
+    </style>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script> var gameInstance = UnityLoader.instantiate("gameContainer", "Build/build_folder.json", { onProgress: UnityProgress }); </script>
+
+</head>
+
+<body class="is-preload">
+    <div id="wrapper" class="fade-in">
+
+        <!-- Intro -->
+        <div id="intro">
+            <h1>Lushe Shipkov</h1>
+            <p>An aerospace engineering major at UCLA with a passion for software development.</p>
+            <p>lushe.shipkov@gmail.com</p>
+            <header id="header">
+                <a href="Resume.pdf" target="_blank" class="logo">Resume</a>
+            </header>
+            <ul class="actions">
+                <li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+            </ul>
+        </div>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/lushe-shipkov/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/anarchvile" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="http://project-airfoil.blogspot.com/" target="_blank" class="icon brands fa-blogger"><span class="label">Blogger</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Featured Post -->
+            <article class="post featured">
+                <header class="major">
+                    <h2>Airfoil Simulator<br /></h2>
+                    <p>A Navier-Stokes solver for simulating airflow over airfoils. Built using Unity and C#, ported to web using WebGL.<br /></p>
+                </header>
+
+                <!--Airfoil-->
+                <div id="gameContainer"></div>
+                <div class="footer">
+                    <div class="webgl-logo"></div>
+                    <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+                </div>
+
+                <br>
+
+                <ul class="actions special">
+                    <li><a href="https://github.com/anarchvile/airfoil_simulator.git" target="_blank" class="button large">Source</a></li>
+                </ul>
+            </article>
+
+            <!-- Posts -->
+            <section class="posts">
+                <article>
+                    <header>
+                        <h2>
+                            Potential Flow<br />
+                            Visualization
+                        </h2>
+                    </header>
+                    <a href="potential_flow.html" target="_blank" class="image fit"><img src="images/potential_flow.jpg" alt="" /></a>
+                    <p>Visualization of elementary potential flows and their superpositions. Built using C++, OpenGL, and a custom character rendering library. Ported to WebGL using emscripten.</p>
+                    <ul class="actions special">
+                        <li><a href="potential_flow.html" target="_blank" class="button">Preview</a></li>
+                        <li><a href="https://github.com/anarchvile/potential_flow.git" target="_blank" class="button">Source</a></li>
+                    </ul>
+                </article>
+
+                <article>
+                    <header>
+                        <h2>
+                            2D Arbitrary<br />
+                            Shape Modeler
+                        </h2>
+                    </header>
+                    <a href="shape_modeler.html" target="_blank" class="image fit"><img src="images/2d_shape_modeler.jpg" alt="" /></a>
+                    <p>Create, save, and load in unique 2D geometries by translating, adding, and deleting vertices from different shapes. Built using C++ and OpenGL. Ported to WebGL using emscripten.</p>
+                    <ul class="actions special">
+                        <li><a href="shape_modeler.html" target="_blank" class="button">Preview</a></li>
+                        <li><a href="https://github.com/anarchvile/2D_shape_modeler.git" target="_blank" class="button">Source</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <header>
+                        <h2>
+                            3D-Printed<br />
+                            RC Airplane
+                        </h2>
+                    </header>
+                    <a href="http://project-airfoil.blogspot.com/p/3d-airplane-project.html" target="_blank" class="image fit"><img src="images/airplane.jpg" alt="" /></a>
+                    <p>A 3D-printed airplane designed from scratch. Designed in CATIA v5, analyzed using Ansys, and printed with a Prusa i3 mk2.</p>
+                    <ul class="actions special">
+                        <li><a href="http://project-airfoil.blogspot.com/p/3d-airplane-project.html" target="_blank" class="button">Preview</a></li>
+                        <li><a href="https://github.com/anarchvile/airplane.git" target="_blank" class="button">Source</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <header>
+                        <h2>
+                            Character Renderer<br />
+                            Library
+                        </h2>
+                    </header>
+                    <a href="https://github.com/anarchvile/character_renderer.git" target="_blank" class="image fit"><img src="images/character_render.jpg" alt="" /></a>
+                    <p>A compact, single-header file library for quickly writing and displaying text in OpenGL. Written entirely using C++.</p>
+                    <ul class="actions special">
+                        <li><a href="https://github.com/anarchvile/character_renderer.git" target="_blank" class="button">Source</a></li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <section class="split contact">
+                <section>
+                    <h3>Email</h3>
+                    <p>lushe.shipkov@gmail.com</p>
+                </section>
+                <section>
+                    <h3>Social</h3>
+                    <ul class="icons alt">
+                        <li><a href="https://www.linkedin.com/in/lushe-shipkov/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="https://github.com/anarchvile" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                        <li><a href="http://project-airfoil.blogspot.com/" target="_blank" class="icon brands alt fa-blogger"><span class="label">Blogger</span></a></li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+
+        <!-- Copyright -->
+        <div id="copyright">
+            <ul><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+        </div>
+    </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+</body>
+</html>
